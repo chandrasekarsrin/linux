@@ -1,0 +1,14 @@
+version: 0.1                        
+component: build                     
+timeoutInSeconds: 10000              
+shell: bash                          
+env:                                 
+  variables:                         
+    FUNCTION_DIRECTORY: "Source1"
+      
+steps:
+  - type: Command                   
+    name: "Build Function into container image"                             
+    timeoutInSeconds: 1200           
+    command: |
+      echo "Build Function - Step started"
