@@ -12,3 +12,6 @@ steps:
     timeoutInSeconds: 1200           
     command: |
       echo "Build Function - Step started"
+      df -h
+      du -h
+      docker stats --no-stream
