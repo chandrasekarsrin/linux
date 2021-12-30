@@ -13,5 +13,6 @@ steps:
     command: |
       echo "Build Function - Step started"
       df -h
-      du -h
+      echo "du command output"
+      du -sh
       docker stats --no-stream
